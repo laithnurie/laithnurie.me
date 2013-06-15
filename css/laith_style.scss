@@ -1,0 +1,29 @@
+body {
+  background-color: #a9a9a9;
+}
+
+.main_content {
+  margin-top: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 974px;
+  height: 400px;
+
+  .cell {
+    height: 100px;
+    border-radius: 25px;
+
+    div#ninja_code {
+      background-color: white;
+      font-size: 10px;
+      height: 100%;
+    }
+
+    div#ninja_games {
+      background-color: blue;
+      font-size: 10px;
+      height: 100%;
+    }
+
+  }
+}
