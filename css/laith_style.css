@@ -1,39 +1,96 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:300);
 
-*{margin:0}
-.container{
-    height:100%;
-    width:100%;
-    position: relative;
-}
-canvas{
-    background:#222;
-
+* {
+    margin: 0
 }
 
-.text{
-    color:#0072c5;
-    font:70px  'Raleway',Arial;
-    letter-spacing:20px;
+#canvas-wrap {
+    /*position: relative;*/
+    background-color: #222;
+}
+
+/* Make this a positioned parent */
+#overlay {
     position: absolute;
-    padding:20px 0;
-    text-align:center;
-    top:40%;
-    transition:all 1s;
-    width:100%;
-}
-span{
-    color:transparent;
-    text-shadow:0 0 10px #222,0 0 20px #0072c5;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
 }
 
-.text:hover{
-    letter-spacing:0px;
-    background:#222;
+#overlay #android {
+    background: #ccc;
+    width: 25%;
+    height: 100%;
+    position: relative;
+    border-radius: 28px;
+    background-image: linear-gradient(bottom, rgb(65, 173, 146) 0%, rgb(80, 191, 164) 100%);
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(65, 173, 146)),color-stop(1, rgb(80, 191, 164)));
+    box-shadow: 0px 2px 0px #319179;
+    float: left;
 }
 
-.text:hover span{
+
+#overlay #cool {
+    background: #ccc;
+    width: 25%;
+    height: 100%;
+    position: relative;
+    border-radius: 28px;
+    background-image: linear-gradient(bottom, rgb(65, 173, 246) 0%, rgb(80, 191, 264) 100%);
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(65, 173, 246)),color-stop(1, rgb(80, 191, 264)));
+    box-shadow: 0px 2px 0px #2081b1;
+    float: left;
+}
+
+#overlay #music {
+    background: #ccc;
+    width: 25%;
+    height: 100%;
+    position: relative;
+    border-radius: 28px;
+    background-image: linear-gradient(bottom, rgb(192, 37, 16) 0%, rgb(228, 54, 31) 100%);
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(192, 37, 16)),color-stop(1, rgb(228, 54, 31)));
+    box-shadow: 0px 2px 0px #911c16;
+    float: left;
+}
+
+#overlay #videogames {
+    background: #ccc;
+    width: 25%;
+    height: 100%;
+    position: relative;
+    border-radius: 28px;
+    background-image: linear-gradient(bottom, rgb(255, 237, 87) 0%, rgb(255, 255, 90) 100%);
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(255, 237, 87)),color-stop(1, rgb(255, 255, 90)));
+    box-shadow: 0px 2px 0px #e8dc42;
+    float: left;
+}
+
+.text {
+    color: #0072c5;
+    font: 70px 'Raleway', Arial;
+    letter-spacing: 20px;
+    position: absolute;
+    padding: 20px 0;
+    text-align: center;
+    top: 40%;
+    transition: all 1s;
+    width: 100%;
+}
+
+span {
+    color: transparent;
+    text-shadow: 0 0 10px #222, 0 0 20px #0072c5;
+}
+
+.text:hover {
+    letter-spacing: 0px;
+    background: #222;
+}
+
+.text:hover span {
     color: #c5190f;
-    text-shadow:none;
+    text-shadow: none;
 }
 

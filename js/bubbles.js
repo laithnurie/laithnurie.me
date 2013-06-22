@@ -12,7 +12,6 @@ $(document).ready(function() {
     canvas.width = w;
     canvas.height = h;
 
-
     function Point(){
         this.x = Math.round(Math.random()*w);
         this.y = 100;
@@ -27,7 +26,6 @@ $(document).ready(function() {
             canvasPoints.push(new Point());
         }
     })();
-
 
     function draw(){
         ctx.clearRect(0,0,w,h);
@@ -44,7 +42,6 @@ $(document).ready(function() {
 
             if(temp.y<0)temp.y = h;
         }
-
         requestAnimFrame(draw);
     }
 
@@ -56,8 +53,5 @@ $(document).ready(function() {
                 window.setTimeout(callback, 1000 / 60);
             };
     })();
-
     draw();
-
-
 });
