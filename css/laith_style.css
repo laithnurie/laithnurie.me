@@ -10,7 +10,7 @@
 }
 
 /* Make this a positioned parent */
-#overlay {
+.overlay {
     position: absolute;
     top: 10%;
     left: 10%;
@@ -18,9 +18,9 @@
     height: 80%;
 }
 
-#overlay #android {
+.overlay #android {
     background: #ccc;
-    width: 25%;
+    width: 100%;
     height: 100%;
     position: relative;
     border-radius: 28px;
@@ -31,9 +31,10 @@
 }
 
 
-#overlay #cool {
+.overlay #cool {
+    margin-top: 100px;
     background: #ccc;
-    width: 25%;
+    width: 100%;
     height: 100%;
     position: relative;
     border-radius: 28px;
@@ -43,9 +44,10 @@
     float: left;
 }
 
-#overlay #music {
+.overlay #music {
+    margin-top: 100px;
     background: #ccc;
-    width: 25%;
+    width: 100%;
     height: 100%;
     position: relative;
     border-radius: 28px;
@@ -55,9 +57,10 @@
     float: left;
 }
 
-#overlay #videogames {
+.overlay #videogames {
+    margin-top: 100px;
     background: #ccc;
-    width: 25%;
+    width: 100%;
     height: 100%;
     position: relative;
     border-radius: 28px;
