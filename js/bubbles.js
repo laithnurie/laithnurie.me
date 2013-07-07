@@ -4,8 +4,8 @@ $(document).ready(function() {
     var canvas = document.querySelector('canvas'),
         ctx = canvas.getContext('2d'),
         w = window.innerWidth,
-        h = 3100,
-        points = 50,
+        h = window.innerHeight,
+        points = 100,
         colors = ['#024a59','#04a65b','#04bf56','#f2cc5d','#f3574a'],
         canvasPoints = [];
 
