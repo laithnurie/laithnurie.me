@@ -1,0 +1,63 @@
+#contact-me {
+  position: fixed;
+  bottom: 20px;
+  width: 100%; }
+  #contact-me #wrapper {
+    text-align: center;
+    width: 360px; }
+  #contact-me .social #arrow {
+    background-color: silver;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background: silver url("../images/arrow-right.png") no-repeat 4px 0px;
+    background-size: 50px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 60px;
+    padding: 12px 0;
+    float: left;
+    display: block;
+    height: 22px; }
+  #contact-me ul {
+    width: 360px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: -5px auto 0;
+    color: #fff;
+    height: 46px;
+    padding: 0;
+    list-style: none;
+    margin-left: -300px;
+    transform-origin: 50% 0%;
+    transform: scale(0) Y(-190px);
+    transition: .5s; }
+    #contact-me ul:hover {
+      margin-left: 0px; }
+  #contact-me ul li {
+    font-size: 20px;
+    cursor: pointer;
+    width: 60px;
+    margin: 0;
+    padding: 12px 0;
+    text-align: center;
+    float: left;
+    display: block;
+    height: 22px; }
+  #contact-me ul li:hover {
+    color: rgba(0, 0, 0, 0.5); }
+  #contact-me li[class*="twitter"] {
+    background: #6cdfea url("../images/twitter.png") no-repeat 11px 6px;
+    padding: 12px 0; }
+  #contact-me li[class*="gplus"] {
+    background: #e34429 url("../images/googleplus.png") no-repeat 16px 6px;
+    padding: 12px 0; }
+  #contact-me li[class*="facebook"] {
+    background: #3b5998 url("../images/facebook.png") no-repeat 14px 8px;
+    padding: 12px 0; }
+  #contact-me li[class*="linkedin"] {
+    background: #8dc5f2 url("../images/linkedin.png") no-repeat 14px 6px;
+    padding: 12px 0; }
+  #contact-me li[class*="github"] {
+    background: #9c7a5b url("../images/github.png") no-repeat 14px 10px;
+    padding: 12px 0; }
